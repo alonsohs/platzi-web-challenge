@@ -14,6 +14,7 @@ body {
     max-width: 1440px;
     height: 100vh;
     display: flex;
+    margin: 0 auto;
 
 }
 
@@ -79,6 +80,7 @@ body {
     width: 140px;
     border-radius: 3em;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    background-color: white;
 }
 
 .social-links {
@@ -101,5 +103,61 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+    body {
+        font-size: 17px;
+        background: url(../images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-size: 100vw;
+        background-repeat: no-repeat;
 
+    }
+
+    .hero {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .graphics, .text {
+        width: 80%;
+        margin: 10%;
+    }
+
+    .illustration-mockups {
+        margin-top: 3em;
+    }
+
+    .illustration-mockups img {
+        max-width: 100%;
+    }
+
+    .text {
+        margin-top: 5%;
+    }
+    .website-info {
+        margin: 0;
+    }
+
+    .title {
+        font-size: .9em;
+        text-align: center;
+    }
+
+    .description {
+        font-size: .92em;
+        text-align: center;
+        line-height: 1.7em;
+    }
+
+    .buton-container {
+        display: flex;
+        justify-content: center;
+    }
+    .register-button {
+        width: 200px;
+    }
+
+    .social-links {
+        margin: 3.5em auto 0;
+    }
+  
 }
